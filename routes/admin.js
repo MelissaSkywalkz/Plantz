@@ -3,6 +3,7 @@ const path = require('path');
 const express = require('express');
 
 const adminController = require('../controllers/admin');
+const detailController = require('../controllers/detail');
 
 const router = express.Router();
 
@@ -19,9 +20,13 @@ router.get('/edit-product/:productId', adminController.getEditProduct);
 
 router.post('/edit-product', adminController.postEditProduct);
 
-router.get('/edit-detail/:productId', adminController.getEditDetail);
+router.get('/edit-detail/:productId', detailController.getEditDetail);
 
-router.post('/edit-detail', adminController.postEditDetail);
+router.post('/edit-detail', detailController.postEditDetail);
+
+router.get('/add-detail/:productId', detailController.getAddDetail);
+
+router.post('/add-detail', detailController.postAddDetail);
 
 router.post('/delete-product', adminController.postDeleteProduct);
 
