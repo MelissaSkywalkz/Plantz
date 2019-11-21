@@ -64,7 +64,7 @@ module.exports = class Detail {
 
   static findById(id, cb) {
     getDetailsFromFile(details => {
-      const detail = details.find(d => d.id === id);
+      const detail = details.find(p => p.id === id);
       cb(detail);
     });
   }

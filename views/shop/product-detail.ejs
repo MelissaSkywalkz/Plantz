@@ -1,10 +1,12 @@
 <%- include('../includes/head.ejs') %>
+
+<link rel="stylesheet" href="/css/detail.css">
     </head>
 
     <body>
         <%- include('../includes/navigation.ejs') %>
-          <div id="content" class="center">
-            <div style="float:left; width: 55%;">
+            <div id="content" class="center">
+            <div class="details" style="float:left; width: 55%;">
             <h1><img class="wp-image-116" style="width: 24px;" src="https://melissaskywalkz.se/wp-content/uploads/2019/09/drops.png"> VATTEN</h1>
             <p>Vattnas sällan, ungefär varannan vecka och helst när jorden börjar torka upp utan att låta växten stå i vatten. De flesta Alocasia arter, inklusive Dragon Scale, är känsliga för övervattning och kräver mindre vatten under vintern när växten är vilande.</p>
             <h1><img class="wp-image-124" style="width: 24px;" src="https://melissaskywalkz.se/wp-content/uploads/2019/09/contrast.png"> LJUS</h1>
@@ -15,32 +17,11 @@
             <a href="/admin/edit-detail/<%= product.id %>?edit=true" class="btn">Edit</a>
             </div>
             <div>
-                <img src="<%= product.imageUrl %>" alt="<%= product.title %>" style="border-radius: 50%;width: 45%;">
+                <img src="<%= product.imageUrl %>" class="detail-image" alt="<%= product.title %>" style="border-radius: 50%;width: 45%;">
             </div>
             </div>
 
-        <style>
-          .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-          }
+            <div class="mobile-detail">
 
-          #content {
-            margin-top: 1%;
-            margin-bottom: 1%;
-            background-color: white;
-            width: 70%;
-            padding: 1.5%;
-          }
-
-          h1 {
-	          color: #bed4df;
-            margin: 0;
-          }
-
-          p {
-            margin-top: 0.5em;
-          }
-          </style>
+            </div>
         <%- include('../includes/end.ejs') %>
