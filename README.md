@@ -5,9 +5,9 @@ Btw, måste fan bestämma om sidan ska vara på svenska eller engelska för just
 
 | To Do | In Progress | Done |
 | :---: | :---: | :---: |
-| Sökfunktion | Responsiv design | HTTP server |
-| Användarkonton | Kategorisering | Dynamisk redigering |
-| HTTPS anslutning | Dynamiska skötselråd |   |
+| Sökfunktion | Kategorisering | HTTP server |
+| Användarkonton | Dynamiska skötselråd | Dynamisk redigering |
+| HTTPS anslutning |  | Responsiv design |
 | VPS server |  |   |
 | Kryptering |   |   |
 | Lagring |  |  |
