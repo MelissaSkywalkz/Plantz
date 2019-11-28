@@ -6,13 +6,8 @@ Btw, måste fan bestämma om sidan ska vara på svenska eller engelska för just
 | To Do | In Progress | Done |
 | :---: | :---: | :---: |
 | Sökfunktion | Kategorisering | HTTP server |
-<<<<<<< HEAD
-| Användarkonton |  Dynamiska skötselråd | Dynamisk redigering |
-| HTTPS anslutning | | Responsiv design |
-=======
 | Användarkonton | Dynamiska skötselråd | Dynamisk redigering |
 | HTTPS anslutning |  | Responsiv design |
->>>>>>> 287a3aef329151cf80e090acf733421d29eabe92
 | VPS server |  |   |
 | Kryptering |   |   |
 | Lagring |  |  |
