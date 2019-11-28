@@ -33,13 +33,13 @@ module.exports = class Detail {
         );
         const updatedDetails = [...details];
         updatedDetails[existingDetailsIndex] = this;
-        fs.writeFile(d, JSON.stringify(updatedDetails), err => {
+        fs.writeFile(p, JSON.stringify(updatedDetails), err => {
           console.log(err);
         });
       } else {
         this.id = Math.random().toString();
         details.push(this);
-        fs.writeFile(d, JSON.stringify(details), err => {
+        fs.writeFile(p, JSON.stringify(details), err => {
           console.log(err);
         });
       }
@@ -50,7 +50,7 @@ module.exports = class Detail {
     getDetailsFromFile(details => {
       const detail = details.find(det => det.id === id);
       const updatedDetails = details.filter(det => det.id !== id);
-      fs.writeFile(d, JSON.stringify(updatedDetails), err => {
+      fs.writeFile(p, JSON.stringify(updatedDetails), err => {
         if (!err) {
           Cart.deleteProduct(id, product.price);
         }
