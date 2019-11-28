@@ -3,8 +3,7 @@ const Detail = require('../models/details');
 
 exports.getAddProduct = (req, res, next) => {
   res.render('admin/edit-product', {
-    pageTitle: 'Add Product',
-    path: '/admin/add-product',
+    path: '/admin/add-new',
     editing: false
   });
 };
@@ -29,7 +28,6 @@ exports.getEditProduct = (req, res, next) => {
       return res.redirect('/');
     }
     res.render('admin/edit-product', {
-      pageTitle: 'Edit Product',
       path: '/admin/edit-product',
       editing: editMode,
       product: product
@@ -54,7 +52,6 @@ exports.postEditProduct = (req, res, next) => {
 
 exports.getAddDetail = (req, res, next) => {
   res.render('admin/edit-detail', {
-    pageTitle: 'Add Product',
     path: '/admin/add-detail',
     editing: false
   });
@@ -82,7 +79,6 @@ exports.getEditDetail = (req, res, next) => {
       return res.redirect('/');
     }
     res.render('admin/edit-detail', {
-      pageTitle: 'Edit Detail',
       path: '/admin/edit-detail',
       editing: editMode,
       product: product
@@ -110,7 +106,6 @@ exports.getProducts = (req, res, next) => {
   Product.fetchAll(products => {
     res.render('admin/products', {
       prods: products,
-      pageTitle: 'Admin Products',
       path: '/admin/products'
     });
   });

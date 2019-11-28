@@ -2,7 +2,6 @@ const Detail = require('../models/details');
 
 exports.getAddDetail = (req, res, next) => {
   res.render('admin/edit-detail', {
-    pageTitle: 'Add Details',
     path: '/admin/add-detail',
     editing: false
   });
@@ -30,7 +29,6 @@ exports.getEditDetail = (req, res, next) => {
       return res.redirect('/');
     }
     res.render('admin/edit-detail', {
-      pageTitle: 'Edit Details',
       path: '/admin/edit-detail',
       editing: editMode,
     });
